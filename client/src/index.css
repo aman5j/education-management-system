@@ -1,3 +1,7 @@
+@import "./styles/auth.css";
+@import "./styles/dashboard.css";
+@import "./styles/common.css";
+
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +14,7 @@ html {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f5f7fb;
+  background: #f5f7fb;
   color: #1f2937;
 }
 
@@ -19,6 +23,14 @@ input,
 select,
 textarea {
   font: inherit;
+}
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #93c5fd;
+  outline-offset: 2px;
 }
 
 a {
