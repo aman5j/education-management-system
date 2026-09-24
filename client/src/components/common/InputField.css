@@ -1,0 +1,55 @@
+.form-field {
+  width: 100%;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 7px;
+  color: #344775;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.required-mark {
+  color: #ef4444;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%;
+  min-height: 42px;
+  box-sizing: border-box;
+  border: 1px solid #d8e1ef;
+  border-radius: 7px;
+  background: #ffffff;
+  padding: 10px 12px;
+  outline: none;
+  color: #27375e;
+  font-family: inherit;
+  font-size: 14px;
+  transition: border 0.2s ease;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  border-color: #1769e0;
+  box-shadow: 0 0 0 3px rgba(23, 105, 224, 0.08);
+}
+
+.form-field input:disabled {
+  background: #f2f5f9;
+  cursor: not-allowed;
+}
+
+.form-field input.field-error {
+  border-color: #ef4444;
+}
+
+.field-error-text {
+  display: block;
+  margin-top: 5px;
+  color: #dc2626;
+  font-size: 12px;
+}

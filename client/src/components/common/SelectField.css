@@ -1,0 +1,8 @@
+.form-field select {
+  appearance: auto;
+  cursor: pointer;
+}
+
+.form-field select.field-error {
+  border-color: #ef4444;
+}

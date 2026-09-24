@@ -1,0 +1,61 @@
+/* =========================
+   TABLE
+========================= */
+
+.table-wrapper {
+  width: 100%;
+
+  overflow-x: auto;
+
+  background: white;
+
+  border-radius: 10px;
+}
+
+.data-table {
+  width: 100%;
+
+  min-width: 850px;
+
+  border-collapse: collapse;
+}
+
+.data-table th {
+  background: #eef4fa;
+
+  color: #344054;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  text-align: left;
+
+  padding: 13px 12px;
+
+  white-space: nowrap;
+}
+
+.data-table td {
+  padding: 12px;
+
+  border-bottom: 1px solid #edf0f5;
+
+  color: #475467;
+
+  font-size: 12px;
+
+  vertical-align: middle;
+}
+
+.data-table tbody tr:hover {
+  background: #fafcff;
+}
+
+.table-message {
+  text-align: center !important;
+
+  padding: 40px !important;
+
+  color: var(--text-secondary) !important;
+}

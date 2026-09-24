@@ -1,0 +1,405 @@
+.dashboard-page {
+  width: 100%;
+}
+
+.dashboard-stats {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.dashboard-stat-card {
+  background: white;
+  border: 1px solid #e5ebf4;
+  border-radius: 11px;
+  padding: 16px;
+  box-shadow: 0 3px 16px rgba(25, 55, 100, 0.04);
+}
+
+.stat-icon {
+  width: 42px;
+  height: 42px;
+  margin-bottom: 11px;
+  border-radius: 10px;
+  background: #edf4ff;
+  color: #1769e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat-title {
+  color: #6c7b99;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.stat-value {
+  color: #142c68;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.stat-change {
+  margin-top: 7px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 12px;
+}
+
+.stat-change small {
+  color: #8290aa;
+}
+
+.positive {
+  color: #16a34a;
+  font-weight: 700;
+}
+
+.neutral {
+  color: #71809f;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.dashboard-select {
+  height: 34px;
+  border: 1px solid #d6dfec;
+  border-radius: 6px;
+  color: #465575;
+  padding: 0 8px;
+  background: white;
+}
+
+.view-all-btn {
+  border: none;
+  background: transparent;
+  color: #1769e0;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.fee-summary {
+  min-height: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.fee-circle {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  background:
+    conic-gradient(
+      #21d48b 0deg 288deg,
+      #f45ca4 288deg 360deg
+    );
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.fee-circle::before {
+  content: "";
+  position: absolute;
+  width: 138px;
+  height: 138px;
+  border-radius: 50%;
+  background: white;
+}
+
+.fee-circle strong,
+.fee-circle span {
+  position: relative;
+  z-index: 1;
+}
+
+.fee-circle strong {
+  color: #172f70;
+  font-size: 20px;
+}
+
+.fee-circle span {
+  color: #75829b;
+  margin-top: 4px;
+  font-size: 12px;
+}
+
+.fee-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.fee-legend > div {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+}
+
+.legend-dot {
+  width: 12px;
+  height: 12px;
+  margin-top: 3px;
+  border-radius: 50%;
+}
+
+.legend-dot.collected {
+  background: #21d48b;
+}
+
+.legend-dot.pending {
+  background: #f45ca4;
+}
+
+.fee-legend div div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.fee-legend strong {
+  font-size: 12px;
+  color: #52617e;
+}
+
+.fee-legend b {
+  color: #172f70;
+  font-size: 14px;
+}
+
+.fee-legend small {
+  color: #7b88a5;
+}
+
+.recent-admissions {
+  display: flex;
+  flex-direction: column;
+}
+
+.recent-admission {
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid #edf1f6;
+}
+
+.recent-admission:last-child {
+  border-bottom: none;
+}
+
+.student-avatar {
+  width: 38px;
+  height: 38px;
+  flex: 0 0 38px;
+  border-radius: 50%;
+  background: #edf4ff;
+  color: #1769e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.student-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.student-info strong {
+  color: #20356d;
+  font-size: 13px;
+}
+
+.student-info span {
+  color: #7a88a4;
+  font-size: 11px;
+}
+
+.student-date {
+  color: #8290aa;
+  font-size: 10px;
+}
+
+.new-badge {
+  padding: 5px 9px;
+  border-radius: 7px;
+  background: #dcfce7;
+  color: #159447;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.classes-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.class-row {
+  min-height: 58px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 1px solid #edf1f6;
+}
+
+.class-row:last-child {
+  border-bottom: none;
+}
+
+.class-time {
+  width: 70px;
+  display: flex;
+  flex-direction: column;
+}
+
+.class-time strong {
+  color: #173579;
+  font-size: 12px;
+}
+
+.class-time span {
+  color: #8190aa;
+  font-size: 10px;
+}
+
+.class-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.class-info strong {
+  font-size: 13px;
+  color: #273a6d;
+}
+
+.class-info span {
+  color: #8190aa;
+  font-size: 11px;
+}
+
+.class-status {
+  padding: 6px 11px;
+  border-radius: 7px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.class-status.ongoing {
+  color: #159447;
+  background: #dcfce7;
+}
+
+.class-status.upcoming {
+  color: #1769e0;
+  background: #e5f0ff;
+}
+
+.pending-actions {
+  display: flex;
+  flex-direction: column;
+}
+
+.pending-actions > div {
+  min-height: 54px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  border-bottom: 1px solid #edf1f6;
+}
+
+.pending-actions > div:last-child {
+  border-bottom: none;
+}
+
+.pending-action-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pending-action-icon.red {
+  background: #fee2e2;
+}
+
+.pending-action-icon.yellow {
+  background: #fff4d6;
+}
+
+.pending-action-icon.purple {
+  background: #eeeaff;
+}
+
+.pending-action-icon.blue {
+  background: #e5f0ff;
+}
+
+.pending-actions strong {
+  width: 25px;
+  color: #172f70;
+}
+
+.pending-actions span:not(.pending-action-icon) {
+  flex: 1;
+  color: #61708e;
+  font-size: 12px;
+}
+
+.pending-actions b {
+  color: #172f70;
+  font-size: 20px;
+}
+
+@media (max-width: 1250px) {
+  .dashboard-stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboard-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .fee-summary {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .recent-admission {
+    gap: 7px;
+  }
+
+  .student-date {
+    display: none;
+  }
+}
+
+@media (max-width: 430px) {
+  .dashboard-stats {
+    grid-template-columns: 1fr;
+  }
+}

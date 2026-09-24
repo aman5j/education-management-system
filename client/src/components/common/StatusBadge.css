@@ -1,0 +1,50 @@
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.status-active,
+.status-ongoing,
+.status-paid,
+.status-verified,
+.status-passed,
+.status-published,
+.status-reviewed {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.status-inactive,
+.status-closed,
+.status-failed,
+.status-cancelled,
+.status-archived {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.status-upcoming,
+.status-pending,
+.status-partial,
+.status-pending-review {
+  background: #fff4d6;
+  color: #c66a00;
+}
+
+.status-draft {
+  background: #e9e7ff;
+  color: #6654d9;
+}
